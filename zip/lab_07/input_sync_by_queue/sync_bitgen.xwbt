@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\zip\lab_07\input_sync_by_queue\sync.ncd
+OUTFILE=C:\Xilinx\zip\lab_07\input_sync_by_queue\sync.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Xilinx\zip\lab_07\input_sync_by_queue
+LICENSE=WebPack
+USER_INFO=211796866_0_0_818

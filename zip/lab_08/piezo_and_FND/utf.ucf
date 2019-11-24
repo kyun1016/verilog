@@ -1,0 +1,21 @@
+net clk loc = p183;			//clk_1Hz
+
+net sw[7] loc = p63;			//sw_1
+net sw[6] loc = p67;			//sw_2
+net sw[5] loc = p65;			//sw_3
+net sw[4] loc = p71;			//sw_4
+net sw[3] loc = p68;			//sw_5
+net sw[2] loc = p74;			//sw_6
+net sw[1] loc = p50;			//sw_7
+net sw[0] loc = p58;			//sw_8
+
+net FND_out[7] loc = p176;	//FND_a
+net FND_out[6] loc = p178;	//FND_b
+net FND_out[5] loc = p181;	//FND_c
+net FND_out[4] loc = p182;	//FND_d
+net FND_out[3] loc = p184;	//FND_e
+net FND_out[2] loc = p185;	//FND_f
+net FND_out[1] loc = p187;	//FND_g
+net FND_out[0] loc = p189;	//FND_dp
+
+net piezo_out loc = p51;	//piezo

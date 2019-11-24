@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/Xilinx/zip/lab_04/one_bit_fulladder_behavioral_level_modeling/full_adder.v -lang verilog -prj one_bit_fulladder_behavioral_level_modeling -o half_adder.spl -module half_adder -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3 half_adder.spl D:/Xilinx/zip/lab_04/one_bit_fulladder_behavioral_level_modeling/half_adder.sym 

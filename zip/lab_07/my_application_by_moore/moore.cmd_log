@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/my_application_by_moore/moore.xst" -ofn "C:/Xilinx/zip/my_application_by_moore/moore.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim moore.ngc moore_synthesis.v 

@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/Mealy_Machine/mealy.xst" -ofn "C:/Xilinx/zip/Mealy_Machine/mealy.syr" 

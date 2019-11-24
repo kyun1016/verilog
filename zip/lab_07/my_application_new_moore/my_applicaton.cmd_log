@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/my_application_new_moore/my_applicaton.xst" -ofn "C:/Xilinx/zip/lab_07/my_application_new_moore/my_applicaton.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/my_application_new_moore/my_applicaton.xst" -ofn "C:/Xilinx/zip/lab_07/my_application_new_moore/my_applicaton.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 my_applicaton.ngc my_applicaton.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_applicaton_map.ncd my_applicaton.ngd my_applicaton.pcf 
+par -w -intstyle ise -ol high -t 1 my_applicaton_map.ncd my_applicaton.ncd my_applicaton.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_applicaton.twx my_applicaton.ncd -o my_applicaton.twr my_applicaton.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc uft.ucf -p xc3s200-pq208-4 my_applicaton.ngc my_applicaton.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_applicaton_map.ncd my_applicaton.ngd my_applicaton.pcf 
+par -w -intstyle ise -ol high -t 1 my_applicaton_map.ncd my_applicaton.ncd my_applicaton.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_applicaton.twx my_applicaton.ncd -o my_applicaton.twr my_applicaton.pcf -ucf uft.ucf 
+bitgen -intstyle ise -f my_applicaton.ut my_applicaton.ncd 

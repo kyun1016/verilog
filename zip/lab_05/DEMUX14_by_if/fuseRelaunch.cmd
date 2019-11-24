@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Xilinx/zip/lab_05/DEMUX14_by_if/demux_tb_isim_beh.exe" -prj "D:/Xilinx/zip/lab_05/DEMUX14_by_if/demux_tb_beh.prj" "work.demux_tb" "work.glbl" 

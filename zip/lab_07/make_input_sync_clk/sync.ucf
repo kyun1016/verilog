@@ -1,0 +1,3 @@
+net clk loc = p183;			//clk_1Hz
+net "in" loc = p63;			//sw_1
+net input_sync loc = p191;	//led_1

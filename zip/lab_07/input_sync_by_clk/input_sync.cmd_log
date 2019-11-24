@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.xst" -ofn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.xst" -ofn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.xst" -ofn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.xst" -ofn "C:/Xilinx/zip/lab_07/input_sync_by_clk/input_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc line_link.ucf -p xc3s200-pq208-4 input_sync.ngc input_sync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc line_link.ucf -p xc3s200-pq208-4 input_sync.ngc input_sync.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o input_sync_map.ncd input_sync.ngd input_sync.pcf 
+par -w -intstyle ise -ol high -t 1 input_sync_map.ncd input_sync.ncd input_sync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml input_sync.twx input_sync.ncd -o input_sync.twr input_sync.pcf -ucf line_link.ucf 
+bitgen -intstyle ise -f input_sync.ut input_sync.ncd 

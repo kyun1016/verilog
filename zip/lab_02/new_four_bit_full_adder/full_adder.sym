@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="full_adder">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2019-9-14T18:25:28</timestamp>
+    <pin polarity="Input" x="64" y="63" name="Cin" />
+    <pin polarity="Input" x="64" y="127" name="A" />
+    <pin polarity="Input" x="64" y="191" name="B" />
+    <pin polarity="Output" x="320" y="63" name="S" />
+    <pin polarity="Output" x="320" y="127" name="Cout" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="192" y="-8" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="63" type="pin Cin" />
+        <line x2="64" y1="63" y2="63" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="127" type="pin A" />
+        <line x2="64" y1="127" y2="127" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="191" type="pin B" />
+        <line x2="64" y1="191" y2="191" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="63" type="pin S" />
+        <line x2="320" y1="63" y2="63" x1="320" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="312" y="127" type="pin Cout" />
+        <line x2="320" y1="127" y2="127" x1="320" />
+        <rect width="256" x="64" y="0" height="192" />
+    </graph>
+</symbol>

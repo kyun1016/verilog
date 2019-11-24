@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Xilinx/zip/lab_05/two_decoder/decoder_tb_isim_beh.exe" -prj "D:/Xilinx/zip/lab_05/two_decoder/decoder_tb_beh.prj" "work.decoder_tb" "work.glbl" 

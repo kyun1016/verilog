@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\lab_02\my_and\my_and.ncd
+OUTFILE=C:\Xilinx\lab_02\my_and\my_and.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Xilinx\lab_02\my_and
+LICENSE=WebPack
+USER_INFO=211796866_0_0_818

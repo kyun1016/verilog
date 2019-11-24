@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Xilinx\zip\lab_09\Text_LCD_\text_LCD.ncd
+OUTFILE=D:\Xilinx\zip\lab_09\Text_LCD_\text_LCD.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=D:\Xilinx\zip\lab_09\Text_LCD_
+LICENSE=WebPack
+USER_INFO=211796866_0_0_818

@@ -1,0 +1,9 @@
+net clk loc = p183;			//clk_1Hz
+net "in" loc = p42;			//bus_sw_8
+net reset loc = p57;			//reset
+
+net "out" loc = p191;		//led_1
+net state_out[3] = p190;	//led_9
+net state_out[2] = p194;	//led_10
+net state_out[1] = p197;	//led_11
+net state_out[0] = p199;	//led_12

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\four_bit_full_adder\four_bit_full_adder.ncd
+OUTFILE=C:\Xilinx\four_bit_full_adder\four_bit_full_adder.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Xilinx\four_bit_full_adder
+LICENSE=WebPack
+USER_INFO=211796866_0_0_818

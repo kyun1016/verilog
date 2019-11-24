@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_06/up_counter_8_bit/up_counter.xst" -ofn "D:/Xilinx/zip/lab_06/up_counter_8_bit/up_counter.syr" 

@@ -1,0 +1,11 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 22 13:51:13 2019
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "P183" LEVEL 1;
+COMP "sw" LOCATE = SITE "P63" LEVEL 1;
+COMP "in_syn" LOCATE = SITE "P191" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

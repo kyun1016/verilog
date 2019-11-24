@@ -1,0 +1,16 @@
+net q[3] loc = p191;	//led1
+net q[2] loc = p196;	//led2
+net q[1] loc = p200;	//led3
+net q[0] loc = p198;	//led4
+
+net data[3] loc = p34;	//bus_sw1
+net data[2] loc = p37;	//bus_sw2
+net data[1] loc = p36;	//bus_sw3
+net data[0] loc = p35;	//bus_sw4
+
+net load loc = p93; 		//btn_sw 1;
+net en loc = p43;			//bus_sw 7;
+net "mode" loc = p42;	//bus_sw 8;
+
+net reset loc = p57;		//reset;
+net clk loc = p183;		//clk 1Hz

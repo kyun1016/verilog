@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : four_bit_full_adder.vf
+// /___/   /\     Timestamp : 09/15/2019 19:55:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Xilinx/four_bit_full_adder/four_bit_full_adder.vf -w C:/Xilinx/four_bit_full_adder/four_bit_full_adder.sch
+//Design Name: four_bit_full_adder
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module four_bit_full_adder(A0, 
+                           A1, 
+                           A2, 
+                           A3, 
+                           B0, 
+                           B1, 
+                           B2, 
+                           B3, 
+                           Cin, 
+                           Cout, 
+                           Sum0, 
+                           Sum1, 
+                           Sum2, 
+                           Sum3);
+
+    input A0;
+    input A1;
+    input A2;
+    input A3;
+    input B0;
+    input B1;
+    input B2;
+    input B3;
+    input Cin;
+   output Cout;
+   output Sum0;
+   output Sum1;
+   output Sum2;
+   output Sum3;
+   
+   wire XLXN_153;
+   wire XLXN_155;
+   wire XLXN_158;
+   
+   full_adder  XLXI_5 (.A(A0), 
+                      .B(B0), 
+                      .Cin(Cin), 
+                      .Cout(XLXN_153), 
+                      .S(Sum0));
+   full_adder  XLXI_6 (.A(A1), 
+                      .B(B1), 
+                      .Cin(XLXN_153), 
+                      .Cout(XLXN_155), 
+                      .S(Sum1));
+   full_adder  XLXI_7 (.A(A2), 
+                      .B(B2), 
+                      .Cin(XLXN_155), 
+                      .Cout(XLXN_158), 
+                      .S(Sum2));
+   full_adder  XLXI_8 (.A(A3), 
+                      .B(B3), 
+                      .Cin(XLXN_158), 
+                      .Cout(Cout), 
+                      .S(Sum3));
+endmodule

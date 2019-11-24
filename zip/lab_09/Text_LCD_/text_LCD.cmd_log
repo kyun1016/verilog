@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.xst" -ofn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.xst" -ofn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.xst" -ofn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.xst" -ofn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.xst" -ofn "D:/Xilinx/zip/lab_09/Text_LCD_/text_LCD.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-pq208-4 text_LCD.ngc text_LCD.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o text_LCD_map.ncd text_LCD.ngd text_LCD.pcf 
+par -w -intstyle ise -ol high -t 1 text_LCD_map.ncd text_LCD.ncd text_LCD.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml text_LCD.twx text_LCD.ncd -o text_LCD.twr text_LCD.pcf 
+bitgen -intstyle ise -f text_LCD.ut text_LCD.ncd 

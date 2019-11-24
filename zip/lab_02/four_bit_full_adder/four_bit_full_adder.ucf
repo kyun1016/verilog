@@ -1,0 +1,18 @@
+net A0 loc = p36;
+net A1 loc = p37;
+net A2 loc = p35;
+net A3 loc = p34;
+
+net B0 loc = p42;
+net B1 loc = p43;
+net B2 loc = p39;
+net B3 loc = p40;
+
+net Cin loc = p63;
+
+net Cout loc = p191;
+
+net Sum0 loc = p199;
+net Sum1 loc = p197;
+net Sum2 loc = p194;
+net Sum3 loc = p190;

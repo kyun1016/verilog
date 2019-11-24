@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "D:/Xilinx/zip/lab_05/incoder42_by_karnaugh_map/encoder_tb_isim_beh.exe" -prj "D:/Xilinx/zip/lab_05/incoder42_by_karnaugh_map/encoder_tb_beh.prj" "work.encoder_tb" "work.glbl" 

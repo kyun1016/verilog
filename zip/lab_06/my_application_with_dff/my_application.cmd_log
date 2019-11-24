@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.xst" -ofn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.xst" -ofn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.xst" -ofn "D:/Xilinx/zip/lab_06/my_application_with_dff/my_application.syr" 

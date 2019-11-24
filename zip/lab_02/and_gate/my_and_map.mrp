@@ -1,0 +1,12 @@
+Release 14.7 Map P.20131013 (nt64)
+Xilinx Mapping Report File for Design 'my_and'
+
+Design Information
+------------------
+Command Line   : map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off
+-c 100 -o my_and_map.ncd my_and.ngd my_and.pcf 
+Target Device  : xc3s200
+Target Package : pq208
+Target Speed   : -4
+Mapper Version : spartan3 -- $Revision: 1.55 $
+Mapped Date    : Tue Sep 17 14:18:10 2019

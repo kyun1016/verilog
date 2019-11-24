@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.xst" -ofn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.xst" -ofn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor_gate.ucf -p xc3s200-pq208-4 xor_gate.ngc xor_gate.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o xor_gate_map.ncd xor_gate.ngd xor_gate.pcf 
+par -w -intstyle ise -ol high -t 1 xor_gate_map.ncd xor_gate.ncd xor_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml xor_gate.twx xor_gate.ncd -o xor_gate.twr xor_gate.pcf -ucf xor_gate.ucf 
+bitgen -intstyle ise -f xor_gate.ut xor_gate.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor_gate.ucf -p xc3s200-pq208-4 xor_gate.ngc xor_gate.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o xor_gate_map.ncd xor_gate.ngd xor_gate.pcf 
+par -w -intstyle ise -ol high -t 1 xor_gate_map.ncd xor_gate.ncd xor_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml xor_gate.twx xor_gate.ncd -o xor_gate.twr xor_gate.pcf -ucf xor_gate.ucf 
+bitgen -intstyle ise -f xor_gate.ut xor_gate.ncd 
+xst -intstyle ise -ifn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.xst" -ofn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor_gate.ucf -p xc3s200-pq208-4 xor_gate.ngc xor_gate.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o xor_gate_map.ncd xor_gate.ngd xor_gate.pcf 
+par -w -intstyle ise -ol high -t 1 xor_gate_map.ncd xor_gate.ncd xor_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml xor_gate.twx xor_gate.ncd -o xor_gate.twr xor_gate.pcf -ucf xor_gate.ucf 
+bitgen -intstyle ise -f xor_gate.ut xor_gate.ncd 
+xst -intstyle ise -ifn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.xst" -ofn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.syr" 
+xst -intstyle ise -ifn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.xst" -ofn "C:/Users/UOS/Desktop/lab_03/four_bit_xor/xor_gate.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc xor_gate.ucf -p xc3s200-pq208-4 xor_gate.ngc xor_gate.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o xor_gate_map.ncd xor_gate.ngd xor_gate.pcf 
+par -w -intstyle ise -ol high -t 1 xor_gate_map.ncd xor_gate.ncd xor_gate.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml xor_gate.twx xor_gate.ncd -o xor_gate.twr xor_gate.pcf -ucf xor_gate.ucf 
+bitgen -intstyle ise -f xor_gate.ut xor_gate.ncd 

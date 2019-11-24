@@ -1,0 +1,11 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.xst" -ofn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.xst" -ofn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.xst" -ofn "C:/Xilinx/zip/lab_07/Moore_machine_by_FSM/check_sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/input_sync_by_FSM/check_sync.xst" -ofn "C:/Xilinx/zip/lab_07/input_sync_by_FSM/check_sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc utf.ucf -p xc3s200-pq208-4 check_sync.ngc check_sync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc utf.ucf -p xc3s200-pq208-4 check_sync.ngc check_sync.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc utf.ucf -p xc3s200-pq208-4 check_sync.ngc check_sync.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o check_sync_map.ncd check_sync.ngd check_sync.pcf 
+par -w -intstyle ise -ol high -t 1 check_sync_map.ncd check_sync.ncd check_sync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml check_sync.twx check_sync.ncd -o check_sync.twr check_sync.pcf -ucf utf.ucf 
+bitgen -intstyle ise -f check_sync.ut check_sync.ncd 

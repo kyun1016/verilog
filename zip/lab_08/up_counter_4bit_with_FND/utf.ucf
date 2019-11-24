@@ -1,0 +1,11 @@
+net clk loc = p183;		//clk_1Hz
+net reset loc = p57;		//reset
+
+net out[7] loc = p176;	//FND_a
+net out[6] loc = p178;	//FND_b
+net out[5] loc = p181;	//FND_c
+net out[4] loc = p182;	//FND_d
+net out[3] loc = p184;	//FND_e
+net out[2] loc = p185;	//FND_f
+net out[1] loc = p187;	//FND_g
+net out[0] loc = p189;	//FND_dp

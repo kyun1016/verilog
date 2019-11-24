@@ -1,0 +1,3 @@
+net clk loc = p79;		//clk 1MHz
+net reset loc = p57;		//reset
+net next_clk loc = p191;	//led 1

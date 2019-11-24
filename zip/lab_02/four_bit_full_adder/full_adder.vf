@@ -1,0 +1,50 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : full_adder.vf
+// /___/   /\     Timestamp : 09/15/2019 19:54:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Xilinx/four_bit_full_adder/full_adder.vf -w C:/Xilinx/full_adder/full_adder.sch
+//Design Name: full_adder
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module full_adder(A, 
+                  B, 
+                  Cin, 
+                  Cout, 
+                  S);
+
+    input A;
+    input B;
+    input Cin;
+   output Cout;
+   output S;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   
+   my_half_adder  XLXI_1 (.a(A), 
+                         .B(B), 
+                         .C(XLXN_2), 
+                         .S(XLXN_1));
+   my_half_adder  XLXI_2 (.a(XLXN_1), 
+                         .B(Cin), 
+                         .C(XLXN_3), 
+                         .S(S));
+   OR2  XLXI_3 (.I0(XLXN_2), 
+               .I1(XLXN_3), 
+               .O(Cout));
+endmodule

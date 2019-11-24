@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3 -refsym my_half_adder C:/Xilinx/half_adder/my_half_adder.sch C:/Xilinx/full_adder/my_half_adder.sym 

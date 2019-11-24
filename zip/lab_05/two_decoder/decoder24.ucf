@@ -1,0 +1,7 @@
+net A[1] loc p63;		//button_sw1
+net A[0] loc p67;		//button_sw2
+
+net Y[3] loc p191;	//LED1
+net Y[2] loc p196;	//LED2
+net Y[1] loc p198;	//LED3
+net Y[0] loc p200;	//LED4

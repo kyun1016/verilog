@@ -1,0 +1,16 @@
+net a[3] loc = p191;	//led1
+net a[2] loc = p196;	//led2
+net a[1] loc = p200;	//led3
+net a[0] loc = p198;	//led4
+
+net b[3] loc = p190;	//led9
+net b[2] loc = p194;	//led10
+net b[1] loc = p197;	//led11
+net b[0] loc = p199;	//led12
+
+net data_in[3] loc = p34;	//bus_sw1
+net data_in[2] loc = p37;	//bus_sw2
+net data_in[1] loc = p36;	//bus_sw3
+net data_in[0] loc = p35;	//bus_sw4
+
+net clk loc = p93; //btn sw 1;

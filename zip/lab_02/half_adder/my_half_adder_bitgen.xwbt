@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Xilinx\half_adder\my_half_adder.ncd
+OUTFILE=C:\Xilinx\half_adder\my_half_adder.bit
+FAMILY=Spartan3
+PART=xc3s200-4pq208
+WORKINGDIR=C:\Xilinx\half_adder
+LICENSE=WebPack
+USER_INFO=211796866_0_0_818

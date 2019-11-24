@@ -1,0 +1,35 @@
+xst -intstyle ise -ifn "C:/Xilinx/half_adder/my_half_adder.xst" -ofn "C:/Xilinx/half_adder/my_half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+bitgen -intstyle ise -f my_half_adder.ut my_half_adder.ncd 
+xst -intstyle ise -ifn "C:/Xilinx/half_adder/my_half_adder.xst" -ofn "C:/Xilinx/half_adder/my_half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+xst -intstyle ise -ifn "C:/Xilinx/half_adder/my_half_adder.xst" -ofn "C:/Xilinx/half_adder/my_half_adder.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/half_adder/my_half_adder.xst" -ofn "C:/Xilinx/half_adder/my_half_adder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+bitgen -intstyle ise -f my_half_adder.ut my_half_adder.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc my_half_adder.ucf -p xc3s200-pq208-4 my_half_adder.ngc my_half_adder.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o my_half_adder_map.ncd my_half_adder.ngd my_half_adder.pcf 
+par -w -intstyle ise -ol high -t 1 my_half_adder_map.ncd my_half_adder.ncd my_half_adder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml my_half_adder.twx my_half_adder.ncd -o my_half_adder.twr my_half_adder.pcf -ucf my_half_adder.ucf 
+bitgen -intstyle ise -f my_half_adder.ut my_half_adder.ncd 

@@ -1,0 +1,14 @@
+net A[0] loc = p36;
+net A[1] loc = p37;
+net A[2] loc = p35;
+net A[3] loc = p34;
+
+net B[0] loc = p42;
+net B[1] loc = p43;
+net B[2] loc = p39;
+net B[3] loc = p40;
+
+net Y[0] loc = p200;
+net Y[1] loc = p198;
+net Y[2] loc = p196;
+net Y[3] loc = p191;

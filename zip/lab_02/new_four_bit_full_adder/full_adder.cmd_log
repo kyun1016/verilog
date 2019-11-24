@@ -1,0 +1,3 @@
+sch2sym -intstyle ise -family spartan3 -refsym full_adder C:/Xilinx/full_adder/full_adder.sch C:/Xilinx/new_four_bit_full_adder/full_adder.sym 
+sch2sym -intstyle ise -family spartan3 -refsym full_adder C:/Xilinx/full_adder/full_adder.sch C:/Xilinx/new_four_bit_full_adder/full_adder.sym 
+sch2sym -intstyle ise -family spartan3 -refsym full_adder C:/Xilinx/full_adder/full_adder.sch C:/Xilinx/new_four_bit_full_adder/full_adder.sym 

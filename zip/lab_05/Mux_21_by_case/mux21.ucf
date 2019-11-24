@@ -1,0 +1,6 @@
+net A[1] loc p34;		//bus_sw1
+net A[0] loc p35;		//bus_sw2
+net S loc p63;			//button_sw1
+
+net Q[1] loc p191;	//LED1
+net Q[1] loc p196;	//LED2

@@ -1,0 +1,9 @@
+MODULE four_bit_full_adder
+	SUBMODULE full_adder
+		INSTANCE XLXI_5
+	SUBMODULE full_adder
+		INSTANCE XLXI_6
+	SUBMODULE full_adder
+		INSTANCE XLXI_7
+	SUBMODULE full_adder
+		INSTANCE XLXI_8

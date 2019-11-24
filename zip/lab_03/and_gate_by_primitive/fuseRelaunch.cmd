@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/UOS/Desktop/lab_03/and_gate_by_primitive/and_gate_tb_isim_beh.exe" -prj "C:/Users/UOS/Desktop/lab_03/and_gate_by_primitive/and_gate_tb_beh.prj" "work.and_gate_tb" "work.glbl" 

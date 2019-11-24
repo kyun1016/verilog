@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Xilinx\zip\lab_07\input_sync_by_clk\impact.xsl
+OUTFILE=C:\Xilinx\zip\lab_07\input_sync_by_clk\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=C:\Xilinx\zip\lab_07\input_sync_by_clk
+LICENSE=iMPACT
+USER_INFO=iMPACT

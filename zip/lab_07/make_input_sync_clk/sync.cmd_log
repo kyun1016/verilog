@@ -1,0 +1,32 @@
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/make_input_sync_clk/sync.syr" 
+xst -intstyle ise -ifn "C:/Xilinx/zip/lab_07/make_input_sync_clk/sync.xst" -ofn "C:/Xilinx/zip/lab_07/make_input_sync_clk/sync.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sync.ucf -p xc3s200-pq208-4 sync.ngc sync.ngd  
+map -intstyle ise -p xc3s200-pq208-4 -cm area -ir off -pr off -c 100 -o sync_map.ncd sync.ngd sync.pcf 
+par -w -intstyle ise -ol high -t 1 sync_map.ncd sync.ncd sync.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sync.twx sync.ncd -o sync.twr sync.pcf -ucf sync.ucf 
+bitgen -intstyle ise -f sync.ut sync.ncd 

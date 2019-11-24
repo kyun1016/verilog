@@ -1,0 +1,13 @@
+net A[3] loc = p34;
+net A[2] loc = p35;
+net A[1] loc = p37;
+net A[0] loc = p36;
+
+net B[3] loc = p40;
+net B[2] loc = p39;
+net B[1] loc = p43;
+net B[0] loc = p42;
+
+net ABG loc = p191;
+net EQ loc = p196;
+net ALB loc = p198;

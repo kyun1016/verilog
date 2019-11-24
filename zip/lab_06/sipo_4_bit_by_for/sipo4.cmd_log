@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Xilinx/zip/lab_06/sipo_4_bit_by_for/sipo4.xst" -ofn "D:/Xilinx/zip/lab_06/sipo_4_bit_by_for/sipo4.syr" 

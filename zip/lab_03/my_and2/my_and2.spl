@@ -1,0 +1,9 @@
+[Inputs]
+a
+b
+[Outputs]
+x
+[BiDir]
+[ATTRIBUTES]
+VeriModel my_and2
+

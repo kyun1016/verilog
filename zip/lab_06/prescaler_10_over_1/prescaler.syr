@@ -1,0 +1,381 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: prescaler.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "prescaler.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "prescaler"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-pq208
+
+---- Source Options
+Top Module Name                    : prescaler
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "prescaler.v" in library work
+Module <prescaler> compiled
+No errors in compilation
+Analysis of file <"prescaler.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <prescaler> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <prescaler>.
+Module <prescaler> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <prescaler>.
+    Related source file is "prescaler.v".
+    Found T flip-flop for signal <next_clk>.
+    Found 32-bit up counter for signal <i>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 T-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <prescaler> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Toggle Registers                                     : 1
+ T flip-flop                                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <prescaler> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block prescaler, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 33
+ Flip-Flops                                            : 33
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : prescaler.ngr
+Top Level Output File Name         : prescaler
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 3
+
+Cell Usage :
+# BELS                             : 242
+#      GND                         : 1
+#      INV                         : 4
+#      LUT1                        : 62
+#      LUT2                        : 32
+#      LUT4                        : 8
+#      MUXCY                       : 70
+#      VCC                         : 1
+#      XORCY                       : 64
+# FlipFlops/Latches                : 33
+#      FDC                         : 32
+#      FDCE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 2
+#      IBUF                        : 1
+#      OBUF                        : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200pq208-4 
+
+ Number of Slices:                       55  out of   1920     2%  
+ Number of Slice Flip Flops:             33  out of   3840     0%  
+ Number of 4 input LUTs:                106  out of   3840     2%  
+ Number of IOs:                           3
+ Number of bonded IOBs:                   3  out of    141     2%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 33    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------+------------------------+-------+
+Control Signal                               | Buffer(FF name)        | Load  |
+---------------------------------------------+------------------------+-------+
+next_clk_Aclr_inv(next_clk_Aclr_inv1_INV_0:O)| NONE(i_0)              | 33    |
+---------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.771ns (Maximum Frequency: 92.843MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 10.771ns (frequency: 92.843MHz)
+  Total number of paths / destination ports: 17953 / 34
+-------------------------------------------------------------------------
+Delay:               10.771ns (Levels of Logic = 32)
+  Source:            i_1 (FF)
+  Destination:       i_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: i_1 to i_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.720   1.216  i_1 (i_1)
+     LUT1:I0->O            1   0.551   0.000  Madd__old_i_1_cy<1>_rt (Madd__old_i_1_cy<1>_rt)
+     MUXCY:S->O            1   0.500   0.000  Madd__old_i_1_cy<1> (Madd__old_i_1_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<2> (Madd__old_i_1_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<3> (Madd__old_i_1_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<4> (Madd__old_i_1_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<5> (Madd__old_i_1_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<6> (Madd__old_i_1_cy<6>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<7> (Madd__old_i_1_cy<7>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<8> (Madd__old_i_1_cy<8>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<9> (Madd__old_i_1_cy<9>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<10> (Madd__old_i_1_cy<10>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<11> (Madd__old_i_1_cy<11>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<12> (Madd__old_i_1_cy<12>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<13> (Madd__old_i_1_cy<13>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<14> (Madd__old_i_1_cy<14>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<15> (Madd__old_i_1_cy<15>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<16> (Madd__old_i_1_cy<16>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<17> (Madd__old_i_1_cy<17>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<18> (Madd__old_i_1_cy<18>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<19> (Madd__old_i_1_cy<19>)
+     MUXCY:CI->O           1   0.064   0.000  Madd__old_i_1_cy<20> (Madd__old_i_1_cy<20>)
+     XORCY:CI->O           1   0.904   1.140  Madd__old_i_1_xor<21> (_old_i_1<21>)
+     LUT4:I0->O            1   0.551   0.000  i_cmp_eq0000_wg_lut<0> (i_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.500   0.000  i_cmp_eq0000_wg_cy<0> (i_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<1> (i_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<2> (i_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<3> (i_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<4> (i_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<5> (i_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.064   0.000  i_cmp_eq0000_wg_cy<6> (i_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          33   0.281   2.054  i_cmp_eq0000_wg_cy<7> (i_cmp_eq0000)
+     LUT2:I1->O            1   0.551   0.000  Mcount_i_eqn_91 (Mcount_i_eqn_9)
+     FDC:D                     0.203          i_9
+    ----------------------------------------
+    Total                     10.771ns (6.361ns logic, 4.410ns route)
+                                       (59.1% logic, 40.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            next_clk_0 (FF)
+  Destination:       next_clk (PAD)
+  Source Clock:      clk rising
+
+  Data Path: next_clk_0 to next_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.720   0.877  next_clk_0 (next_clk_0)
+     OBUF:I->O                 5.644          next_clk_OBUF (next_clk)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.36 secs
+ 
+--> 
+
+Total memory usage is 4506480 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
